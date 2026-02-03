@@ -1,83 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguins</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/icons/tux-icon.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/tux-icon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header container">
-            <nav>
-                <a href="#" id="logo">Penguins</a>
-                <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Penguin" target="_blank" rel="noopener noreferrer">About</a></li>
-                    <li><a href="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins" target="_blank" rel="noopener noreferrer">Curiosities</a></li>
-                    <li><a href="https://penguinscience.com/ask-a-researcher/" target="_blank" rel="noopener noreferrer">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header container">
+        <nav>
+          <a href="#" id="logo">Penguins</a>
+          <ul id="nav-menu">
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Penguin"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Curiosities</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://penguinscience.com/ask-a-researcher/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+          <button id="list-menu">
+            <span><img src="./assets/icons/list-menu.svg" alt="" /></span>
+          </button>
+        </nav>
+      </div>
     </header>
+    <aside id="sidebar">
+      <nav>
+        <button id="close-menu">
+          <span><img src="./assets/icons/close-list-menu.svg" /></span>
+        </button>
+        <a
+          href="https://en.wikipedia.org/wiki/Penguin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          About
+        </a>
+        <a
+          href="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins"
+        >
+          Curiosities
+        </a>
+        <a href="https://penguinscience.com/ask-a-researcher/"> FAQ </a>
+      </nav>
+    </aside>
     <section class="introduction-bg">
-        <div class="introduction container">
-            <div class="description">
-                <h1>Penguins are fantastic animals</h1>
-                <p>From their swimming prowess to complex social lives, explore the amazing adaptation and diversity of these fascinating seabirds.</p>
-                <button>Sign up</button>
-            </div>
-            <picture>
-                <img src="./assets/img/penguin.jpg" alt="Penguim">
-            </picture>
+      <div class="introduction container">
+        <div class="description">
+          <h1>Penguins are fantastic animals</h1>
+          <p>
+            From their swimming prowess to complex social lives, explore the
+            amazing adaptation and diversity of these fascinating seabirds.
+          </p>
+          <button class="signup">Sign up</button>
         </div>
+        <picture>
+          <img src="./assets/img/penguin.jpg" alt="Penguim" />
+        </picture>
+      </div>
     </section>
     <section class="informations-bg">
-        <div class="informations container">
-            <h2>Cool facts about penguins</h2>
-            <div class="informations-cards">
-                <div class="card">
-                    <div class="card-img-container"><img src="./assets/img/tux.png" alt="Tux, pet of Linux OS" id="tux"></div>
-                    <p>The pet of the best OS (Linux, in my opinion) is a adorable penguin, named Tux.</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-container"><img src="./assets/img/penguins-couple.jpg" alt="A couple of penguins"></div>
-                    <p>Penguins usually mate for life, and male penguins gift females with rocks.</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-container"><img src="./assets/img/penguin-swimming.jpg" alt="A penguin swimming"></div>
-                    <p>Penguins are excellent swimmers, being able to swim at a speed of 15 mp/h.</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-container"><img src="./assets/img/penguin-open-mouth.jpg" alt="A penguin with open mouth" id="open-mouth"></div>
-                    <p>Penguins don't have teeth, just like all birds.</p>
-                </div>
+      <div class="informations container">
+        <h2>Cool facts about penguins</h2>
+        <div class="informations-cards">
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/tux.png"
+                alt="Tux, pet of Linux OS"
+                id="tux"
+              />
             </div>
+            <p>
+              The pet of the best OS (Linux, in my opinion) is a adorable
+              penguin, named Tux.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/penguins-couple.jpg"
+                alt="A couple of penguins"
+              />
+            </div>
+            <p>
+              Penguins usually mate for life, and male penguins gift females
+              with rocks.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/penguin-swimming.jpg"
+                alt="A penguin swimming"
+              />
+            </div>
+            <p>
+              Penguins are excellent swimmers, being able to swim at a speed of
+              15 mp/h.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/penguin-open-mouth.jpg"
+                alt="A penguin with open mouth"
+                id="open-mouth"
+              />
+            </div>
+            <p>Penguins don't have teeth, just like all birds.</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="feedback-bg">
-        <div class="feedback-content">
-            <blockquote cite="https://gemini.google.com">"Defying the ice and mastering the oceans, penguins personify the beauty of adaptation and the strength of life in extreme environments."</blockquote>
-            <p>- Gemini, Google</p>
-        </div>
+      <div class="feedback-content">
+        <blockquote cite="https://gemini.google.com">
+          "Defying the ice and mastering the oceans, penguins personify the
+          beauty of adaptation and the strength of life in extreme
+          environments."
+        </blockquote>
+        <p>- Gemini, Google</p>
+      </div>
     </section>
     <article class="register-bg">
-        <div class="register container">
-            <div class="register-text">
-                <h3>Help now!</h3>
-                <p>Subscribe to receive the latest news about penguins and help them.</p>
-            </div>
-            <button>Sign up</button>
+      <div class="register container">
+        <div class="register-text">
+          <h3>Help now!</h3>
+          <p>
+            Subscribe to receive the latest news about penguins and help them.
+          </p>
         </div>
+        <button class="signup">Sign up</button>
+      </div>
     </article>
     <footer>
-        <p>Made by Adrian Silva <a href="https://github.com/grsadrian" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/github-mark-white.svg" alt="GitHub Logo"></a></p>
+      <p>
+        Made by Adrian Silva
+        <a
+          href="https://github.com/grsadrian"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/icons/github-mark-white.svg" alt="GitHub Logo"
+        /></a>
+      </p>
     </footer>
-</body>
-
+  </body>
+  <script src="./script.js"></script>
 </html>
