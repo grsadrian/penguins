@@ -125,6 +125,7 @@ a:hover {
 
 .informations-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0px 24px;
   gap: 20px;
@@ -132,7 +133,7 @@ a:hover {
 
 .card {
   text-align: center;
-  width: 25%;
+  width: 220px;
 }
 
 .card-img-container {
@@ -169,7 +170,7 @@ a:hover {
 blockquote {
   font-weight: lighter;
   font-style: italic;
-  font-size: 36px;
+  font-size: 32px;
   color: #1f2937;
 }
 
